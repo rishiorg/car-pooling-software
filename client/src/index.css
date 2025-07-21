@@ -1,0 +1,163 @@
+/* Global Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Layout Components */
+.main-content {
+  flex: 1 0 auto;
+  padding: 2rem 0;
+}
+
+/* Navbar Styles */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+/* Footer Styles */
+footer {
+  margin-top: auto;
+}
+
+/* Home Page */
+.home-page .jumbotron {
+  background-color: #f8f9fa;
+  padding: 4rem 2rem;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+}
+
+.home-page .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.home-page .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Auth Forms */
+.auth-form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+/* Ride Cards */
+.ride-card {
+  transition: transform 0.2s ease;
+  margin-bottom: 1.5rem;
+}
+
+.ride-card:hover {
+  transform: translateY(-3px);
+}
+
+/* Badges and Tags */
+.badge {
+  font-weight: 500;
+  padding: 0.5em 0.75em;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Buttons */
+.btn {
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+}
+
+.btn-primary {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.btn-primary:hover {
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+}
+
+.btn-outline-primary {
+  color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.btn-outline-primary:hover {
+  background-color: #0d6efd;
+  color: #fff;
+}
+
+/* Form Controls */
+.form-control:focus {
+  border-color: #86b7fe;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Tabs */
+.nav-tabs .nav-link {
+  color: #495057;
+  cursor: pointer;
+}
+
+.nav-tabs .nav-link.active {
+  color: #0d6efd;
+  font-weight: 500;
+}
+
+/* Tab Content */
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+/* Spinner */
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .home-page .jumbotron {
+    padding: 2rem 1rem;
+  }
+  
+  .card-body {
+    padding: 1.25rem;
+  }
+  
+  .auth-form {
+    padding: 1.5rem;
+  }
+}
